@@ -1,6 +1,9 @@
-import { lambda, Format } from 'node-lambdas';
+import { lambda, Format } from '@node-lambdas/core';
 
-lambda({
+const configuration = {
+  version: 1,
   input: Format.Text,
   output: Format.Text,
-}, (input, output) => output.send(new MarkdownIt().render(input.body)));
+};
+
+lambda(configuration, (input, output) => output.send(new MarkdownIt().render(input.body)));
