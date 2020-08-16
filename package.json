@@ -2,7 +2,11 @@
   "name": "@node-lambdas/markdown",
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "markdown-it": "^11.0.0"
   }
 }
